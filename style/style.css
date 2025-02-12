@@ -1,30 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body{
     background-color: black;
+    font-family: "Rubik", serif;
 }
 
 .section1{
     height: auto;
-    background-color: white;
+    background-color: black;
+    
 }
 
 .section1-width{
     width: 1200px;
-    background-color: pink;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+
+
 .section1-contents{
-    width: 1100px;
-    background-color: aqua;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
+
+.section1-contents ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.section1-contents li{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.section1-contents li:hover{
+    background-color: #0055ff;
+}
+
+.dropdown:hover{
+    background-color: blue;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
 .icon{
     height: 40px;
     width: 40px;
 }
+
+
+.details-width{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.section1-details{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.section2{
+    height: auto;
+}
+
+.section2-width{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.section2-stuff{
+    height: 50%;
+    width: 50%;
+    padding:95px;
+}
+
+.section2-contents{
+    width:  100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 45px;
+    border-radius: 5px;
+    text-align: justify;
+    margin: 5px auto;
+}
+
+.box{
+    width: 60px;
+    height: 60px;
+}
+
+.about-info{
+    gap: 20px;
+    color: white;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .btn-class{
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  
+  button:hover{
+    background-color: #0055ff;
+  }
+
+  .number{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .number-count span{
+    color: #0055ff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .section3{
+    height: auto;
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .section3-width{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section3-width p{
+    font-weight: bolder;
+    color: #0055ff;
+  }
+
+  .section3-width h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .section3-contents{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .card{
+    background-color: #101010;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px; 
+    color: blue;
+  }
+
+  .card p{
+    color: white;
+  }
+
+  .learn-more{
+    color: white;
+  }
+
+
+  .section-4{
+    height: auto;
+  }
+
+  .logo-slider {
+    overflow: hidden;
+    padding: 30px 0 0 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-slider:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+}
+
+.logos-slide img {
+    width: 183px;
+    height: 83px;
+    margin: 0 40px;
+   
+}
+
+.section5-width{
+  background-color: aqua;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5-width h1{
+  color: white;
+}
+
+.section5{
+  height: auto;
+}
+
+.section5-cards{
+  background-color: #0056b3;
+  width: 80%;
+  
+ 
+}
+
+.section5-contents{
+  background-color: pink;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card-dup{
+  width: 300px;
+  background-color: #101010;
+  gap: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+}
+
+
+
+.section6-width{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-section{
+    text-align: justify;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section6-contents{
+  background-color: #007bff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 45px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.team-image {
+  margin-top: -250px;
+  margin-left: 650px;
+  width: 30%; 
+  height: 30%;  
+}
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.footer-section-content{
+  background-color: rgba(255, 255, 255, 0.166);
+  height: auto;
+}
+
+.footer-section-width{
+  
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-section {
+  color: white;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.footer-section ul li a:hover {
+  opacity: 1;
+}
+.social-icons a img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+
+  @media (max-width: 1024px){
+
+    .section1-width{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .section1-details{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .section1-contents{
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      margin-top: 30px;  
+  }
+
+
+  .details-width{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.section2-stuff{
+  width: 100%;
+  text-align: justify;
+  padding:15px;
+}
+
+.section2-width{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-info{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.section3-width{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section3-width p{
+  font-weight: bolder;
+  color: #0055ff;
+}
+
+.section3-width h1{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.section3-contents{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card{
+  background-color: #101010;
+  width: 30%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px; 
+  color: blue;
+}
+
+.card p{
+  color: white;
+}
+
+.learn-more{
+  color: white;
+}
+
+  }
+
+
+  @media (max-width: 768px){
+
+
+    .section1-contents{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .section1-width{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .section1-details{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+  background-color: #101010;
+  width: 20%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px; 
+  color: blue;
+}
+.hamburger {
+  display: block;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #007bff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#menu-toggle:checked + .menu {
+  display: flex;
+}
+
+    
+    .about-info{
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    .section2-stuff{
+      width: 80%;
+      text-align: justify;
+      padding:10px;
+    }
+   
+    .section2-width{
+      background-color: black;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+  }
+  }
+
+
+
+
+    @media screen and (max-width: 425px) {
+      
+      .section1-contents {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+  
+      .section1-contents ul {
+          flex-direction: column;
+          gap: 10px;
+      }
+  
+      .section1-contents ul li {
+          display: block;
+          width: 100%;
+      }
+
+      .section3-contents {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+      }
+      .section3-width{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .section3-contents .card {
+          width: 50%; 
+          text-align: center;
+      }
+      .card{
+        background-color: #101010;
+        width: 10%;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 30px; 
+        color: blue;
+      }
+  }
+  
+
+  @media (max-width: 683px) {
+    .section3-contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .section3-width{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  }
