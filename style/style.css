@@ -304,6 +304,11 @@ button{
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width:1200px) {
+  .section5-width{
+    width: 100%;
+  }
+}
 
 .section5-width h1{
   color: white;
@@ -315,24 +320,24 @@ button{
 
 .section5-cards{
   background-color: #0056b3;
-  width: 80%;
+  width: 100%;
   
  
 }
 
 .section5-contents{
   background-color: pink;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 10px;
   flex-wrap: wrap;
-  padding: 25px;
 }
 
 .card-dup{
-  width: 300px;
+  width: 225px;
   background-color: #101010;
-  gap: 30px;
+
   border-radius: 5px;
   padding: 20px;
   margin: 5px;
