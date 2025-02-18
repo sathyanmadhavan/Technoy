@@ -322,9 +322,13 @@ button{
   .card{
     width: 225px;
     background-color: #101010;
-    gap: 30px;
+    padding: 5px;
+    height: 240px;
     border-radius: 5px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 5px;
     color: white;
   }
@@ -373,6 +377,7 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 400px;
 }
 
 .section5-width{
@@ -413,6 +418,21 @@ button{
   justify-content: center;
   align-items: center;
 
+}
+.section6-contents{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.section6-content-items{
+  display: flex;
+  flex-direction: column;
+}
+.section6-contents img{
+  background-size: contain;
+  background-position: center;
+height: 300px;
+width: auto;
+margin-top: -320px;
 }
 
 .card-dup{
