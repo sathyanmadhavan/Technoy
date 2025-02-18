@@ -23,7 +23,10 @@ body{
   .section1-width{
     width: 100%;
   }
+
 }
+
+
 
 .navbar {
   width: 100%;
@@ -58,6 +61,40 @@ body{
 #menu-toggle {
   display: none;
 }
+
+
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+}
+
 
 .section1-contents{
     width: 60%;
@@ -171,22 +208,29 @@ body{
 }
 
 .section2-stuff{
-    height: 50%;
-    width: 50%;
-    padding:95px;
+    height: auto;
+    width: 70%;
 }
 
 .section2-contents{
-    width:  100%;
+    width:  600px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    padding: 45px;
     border-radius: 5px;
     text-align: justify;
     margin: 5px auto;
 }
 
+
+@media screen and (max-width: 1200px) {
+
+  .section2-contents{
+
+    width: 300px;
+  }
+  
+}
 .box{
     width: 60px;
     height: 60px;
@@ -195,6 +239,7 @@ body{
 .about-info{
     gap: 20px;
     color: white;
+    text-align: justify;
 }
 
 button{
@@ -320,6 +365,14 @@ button{
     height: 83px;
     margin: 0 40px;
    
+}
+
+.section5{
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section5-width{
