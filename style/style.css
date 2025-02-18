@@ -227,7 +227,17 @@ body{
 
   .section2-contents{
 
-    width: 300px;
+    width: 100%;
+  }
+  
+}
+
+@media  screen and (max-width: 357px) {
+
+  .section2-contents{
+
+    width: 100%;
+    flex-direction: column;
   }
   
 }
@@ -377,7 +387,7 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
 }
 
 .section5-width{
@@ -430,22 +440,10 @@ button{
 .section6-contents img{
   background-size: contain;
   background-position: center;
-height: 300px;
-width: auto;
-margin-top: -320px;
+  height: 350px;
+  width: auto;
+  margin-top: -100px;
 }
-
-.card-dup{
-  width: 225px;
-  background-color: #101010;
-  gap: 30px;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 5px;
-  color: white;
-}
-
-
 
 .section6-width{
   width: 1200px;
@@ -459,8 +457,23 @@ margin-top: -320px;
   .section6-width{
     width: 100%;
   }
+  .section6-contents img{
+    width: 100%;
+  }
+  .section6-content-items{
+  width: 100%;
+  }
+
 }
 
+@media screen and (max-width: 598px) {
+  .section6-contents{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  
+}
 .career-section{
     text-align: justify;
     width: 80%;
@@ -470,31 +483,21 @@ margin-top: -320px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.section6-contents{
-  background-color: #007bff;
-}
 
 .button {
+  width: 30%;
   display: inline-block;
-  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 45px;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .button:hover {
   background-color: #0056b3;
 }
-
-.team-image {
-  margin-top: -250px;
-  margin-left: 650px;
-  width: 30%; 
-  height: 30%;  
-}
-
 
 
 @keyframes slide {
