@@ -153,6 +153,7 @@ body{
 
 
 .details-width{
+    background-color: rgba(0, 0, 0, 0.26);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +189,7 @@ body{
 
 .section2{
     height: auto;
+    margin-bottom: 100px;
 }
 
 .section2-width{
@@ -210,16 +212,19 @@ body{
 .section2-stuff{
     height: auto;
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .section2-contents{
-    width:  600px;
+    width:  500px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    border-radius: 5px;
+    border-radius: 2px;
+    padding: 10px;
     text-align: justify;
-    margin: 5px auto;
+    margin: 30px;
 }
 
 
@@ -332,7 +337,7 @@ button{
   .card{
     width: 225px;
     background-color: #101010;
-    padding: 5px;
+    padding: 20px;
     height: 240px;
     border-radius: 5px;
     display: flex;
@@ -353,35 +358,68 @@ button{
 
 
   .section-4{
+    /* From https://css.glass */
+    background-color: rgba(255, 255, 255, 0.108);
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
   }
 
+  .section4-width{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width:1200px) {
+    .section4-width{
+      width: 100%;
+    }
+  }
   .logo-slider {
-    overflow: hidden;
-    padding: 30px 0 0 0;
-    white-space: nowrap;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 50px 20px;
     position: relative;
 }
 
-.logo-slider:hover .logos-slide {
-    animation-play-state: paused;
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.logos-slide {
-    display: inline-block;
-    animation: 45s slide infinite linear;
+.client-logo {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.logos-slide img {
-    width: 183px;
-    height: 83px;
-    margin: 0 40px;
-   
+.client-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .section5{
+    margin-bottom: 100px;
+}
+
+.card-img{
+  width: 50px;
+  height: 50px;
+}
+
+.section-5{
     background-image: url(/images/tecknoyassert[1].png);
     background-position: center;
     background-repeat: no-repeat;
@@ -389,7 +427,6 @@ button{
     background-attachment: fixed;
     margin-bottom: 100px;
 }
-
 .section5-width{
   width: 1200px;
   margin: 0 auto;
@@ -437,6 +474,7 @@ button{
   display: flex;
   flex-direction: column;
 }
+
 .section6-contents img{
   background-size: contain;
   background-position: center;
@@ -475,8 +513,9 @@ button{
   
 }
 .career-section{
+    height: 230px;
     text-align: justify;
-    width: 80%;
+    width: 95%;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -498,6 +537,9 @@ button{
 
 
 @media screen and (max-width: 1200px) {
+  .career-section{
+    height: 100%;
+  }
   .button {
     width: 100%;
     border-radius: 45px;
@@ -573,4 +615,121 @@ button{
 .social-icons a img {
   width: 30px;
   margin-right: 10px;
+}
+
+
+.video-section{
+  height: 300px;
+  margin-bottom: 100px;
+  background-image: url(/images/robo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section-width{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media screen and (max-width:1200px){
+
+  .video-section-width{
+    width: 100%;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+}
+
+.play-button {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.testimonal{
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.testimonal-width{
+  background-color: aliceblue;
+  width: 1200px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonal-width p{
+  color: #0055ff;
+}
+
+.owl-carousel {
+  background-color: #0056b3;
+  
+}
+
+.testimonial-card {
+  background: #111;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+.testimonal-content{
+  background-color: #0056b3;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.test-text{
+  background-color: #111;
+  color: pink;
+}
+
+.test-text .role {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.test-text .stars {
+  color: yellow;
+  font-size: 18px;
+}
+
+.portrait{
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+  border-radius: 45px;
 }
