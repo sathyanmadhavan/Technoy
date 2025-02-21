@@ -680,6 +680,13 @@ button{
   align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .testimonal-width{
+    width: 100%;
+  }
+  
+}
 .testimonal-width p{
   color: #0055ff;
   width: 80%;
@@ -738,4 +745,157 @@ button{
 .portrait{
   height: 30%;
   width: 30%;
+}
+
+
+.services-banner{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/tecknoyassert[1].png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-width{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-contents h1{
+
+  color: white;
+}
+
+.services-contents p{
+
+  color: #f1f1f1;
+}
+
+.services-contents strong{
+  color: #0055ff;
+}
+
+.contact-us{
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.contact-us-width{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-us-width{
+    width: 100%;
+  }
+
+  .services-width{
+    width: 100%;
+  }
+}
+.contact-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+
+.contact-form {
+  width: 50%;
+  
+}
+
+.contact-form h2 {
+  color: #1e90ff;
+}
+
+.contact-form h1 {
+  font-size: 15px;
+  color: white;
+}
+
+.contact-form p {
+  color: #bbbbbb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #1a1a1a;
+  border: 1px solid white;
+  color: white;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+
+button:hover {
+  background-color: #0073e6;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.information{
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactus-banner{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/tecknoyassert[1].png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.information-contents{
+  width: 80%;
+ 
+}
+
+.information-2{
+  margin-top: 100px;
 }
