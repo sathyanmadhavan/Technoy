@@ -687,7 +687,7 @@ button{
 }
 
 .owl-carousel {
-  background-color: #0056b3;
+  background-color: black;
   
 }
 
@@ -709,19 +709,19 @@ button{
 .testimonal-content{
   background-color: #0056b3;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 .testimonal-content img{
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+ 
 }
 
 .test-text{
-  background-color: #111;
   color: pink;
 }
 
@@ -735,3 +735,7 @@ button{
   font-size: 18px;
 }
 
+.portrait{
+  height: 30%;
+  width: 30%;
+}
