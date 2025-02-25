@@ -466,6 +466,7 @@ button{
   align-items: center;
 
 }
+
 .section6-contents{
   display: flex;
   flex-direction: row-reverse;
@@ -517,9 +518,13 @@ button{
     text-align: justify;
     width: 95%;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #0055ff;
+    background-image: url(/images/tecknoyassert[1].png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
