@@ -258,9 +258,9 @@ body{
 }
 
 button{
-    background-color: white;
+    width: 30% ;
+    padding: 10px;
     border: none;
-    padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -269,7 +269,7 @@ button{
   }
   
   .btn-class{
-    background-color: #000;
+    background-color: black;
     color: white;
     border: 2px solid white;
   }
@@ -523,16 +523,7 @@ button{
 }
 
 
-.button {
-  width: 30%;
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 45px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-}
+
 
 
 
@@ -540,14 +531,6 @@ button{
   .career-section{
     height: 100%;
   }
-  .button {
-    width: 100%;
-    border-radius: 45px;
-    text-align: center;
-  }
-}
-.button:hover {
-  background-color: #0056b3;
 }
 
 
@@ -670,7 +653,6 @@ button{
 }
 
 .testimonal-width{
-  background-color: aliceblue;
   width: 1200px;
   margin: 0 auto;
   color: white;
@@ -714,13 +696,13 @@ button{
 
 
 .testimonal-content{
-  background-color: #0056b3;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 .testimonal-img{
   width: 80px;
@@ -739,8 +721,6 @@ button{
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  color: pink;
 }
 
 .test-text .role {
@@ -862,21 +842,6 @@ input, textarea {
 textarea {
   height: 100px;
 }
-
-button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #1e90ff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 90%;
-}
-
-button:hover {
-  background-color: #0073e6;
-}
-
 .contact-info {
   width: 40%;
 }
